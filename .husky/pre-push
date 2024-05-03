@@ -37,11 +37,3 @@ ${red}Error While Building the application.
 Fix the Error to push code${clear}
 "; 
 false;)
-
-echo "
-🚀 Creating A Production Build of Storybook 🚀"
-npm run build-storybook || ( echo -e "
-${red}Error While Building the Storybook.
-Fix the Error to push code${clear}
-"; 
-false;)
