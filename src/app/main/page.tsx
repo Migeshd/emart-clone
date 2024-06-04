@@ -1,13 +1,19 @@
 'use client';
 
-// import SideBar from '@/ui/Components/SideBar';
-import SideNavBar from '@/ui/Components/SideNavBar';
+import SidebarProvider from '@/context/SidebarProvider';
+import AdminLayout from '@/ui/Components/Layout/AdminLayout';
+// import SideBar from '@/ui/Components/Layout/SideBar';
+
+// this below sideNavBar is if sothing goes wrong then this is the original file
+// import SideNavBar from '@/ui/Components/SideNavBar';
 
 function page() {
   return (
     <div>
-      {/* <SideBar /> */}
-      <SideNavBar />
+      <SidebarProvider>
+        <AdminLayout />
+      </SidebarProvider>
+      {/* <SideBar/> */}
     </div>
   );
 }
